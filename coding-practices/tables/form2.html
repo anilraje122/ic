@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                color: sienna
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <th> Full Name </th>
+                <td>
+                    <input type="text" 
+                    placeholder="Enter name" 
+                    size="40" 
+                    name="fname" 
+                    maxlength="10" 
+                    tabindex="1" 
+                    value="Anil Raj" 
+                    readonly="readonly" 
+                    disabled="disabled" 
+                    id="abc" 
+                    class="xyz">
+                </td>
+            </tr>
+            <tr>
+                <th> Gender </th>
+                <td> 
+                    <input type="radio" name="gender" value="M" id="abc" class="xyz"> Male 
+                    <input type="radio" name="gender" value="F" id="abc" class="xyz"> Female
+                </td>
+            </tr>
+            <tr>
+                <th> Hobbies </th>
+                <td>
+                    <input type="checkbox" name="hobby[]" id="a1" class="b1" value="T"> Travelling
+                    <input type="checkbox" name="hobby[]" id="a2" class="b2" value="R" checked="checked"> Reading
+                    <input type="checkbox" name="hobby[]" id="a3" class="b3" value="D"> Dancing
+                </td>
+            </tr>
+            <tr>
+                <th> City </th>
+                <td>
+                    <select id="a2" class="c2" name="city">
+                        <option value="">---Choose---</option>
+                        <option value="1">Bangalore</option>
+                        <option value="2">Mumbai</option>
+                        <option value="3">Delhi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th> Services </th>
+                <td>
+                    <select name="services" id="a3" class="c3">
+                        <option value="">--Choose--</option>
+                        <optgroup label="Education">
+                            <option>UG</option>
+                            <option>PG</option>
+                            <option>Masters</option>
+                        </optgroup>>
+                        <optgroup label="Software">
+                            <option>Java</option>
+                            <option>Python</option>
+                            <option>Database</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th> Message </th>
+                <td>
+                    <textarea placeholder="Enter message" name="msg" id="abc" class="xyz" maxlength="100" rows="5" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th> File Upload </th>
+                <td> 
+                    <input type="file" name="doc" id="abc" class="abc">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <br>
+                    <button type="submit" id="btn1" class="mubtn" name="btn4">Submit</button>
+                    <button type="reset" id="btn2" class="mubtn" name="btn5" disabled>Clear</button>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>
