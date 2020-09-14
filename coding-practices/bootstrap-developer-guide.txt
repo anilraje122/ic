@@ -1,0 +1,206 @@
+Bootstrap is first framework of html, css, javascript. bootstrap use to design responsive webpage.
+   Bootstrap is design on grid system.
+   grid syatem has devided all devices(using we browse internet) into 5 types 
+   
+    1. extra small - 0px to 576px  
+	2. small - 577px to 768px 
+	3. medium - 769px to 992px 
+	4. large - 993px to 1200px 
+	5. extra large  -   >1201px 
+	
+	Note : bootstrap grid system , has given 12 classes for each device. 
+	       so total grid system has 12 * 5 = 60 classes for responsive design 
+		   
+	 classes For extra small device 
+		col-1 
+		col-2 
+		col-3 
+		col-4 
+		col-5 
+		col-6 
+		col-7 
+		col-8 
+		col-9 
+		col-10 
+		col-11 
+		col-12
+	---------------------------
+	classes for small device 
+		col-sm-1 
+		col-sm-2 
+		col-sm-3 
+		col-sm-4 
+		col-sm-5 
+		col-sm-6 
+		col-sm-7 
+		col-sm-8 
+		col-sm-9 
+		col-sm-10 
+		col-sm-11 
+		col-sm-12
+   ------------------------------
+	classes for medium device 
+		col-md-1 
+		col-md-2 
+		col-md-3 
+		col-md-4 
+		col-md-5 
+		col-md-6 
+		col-md-7 
+		col-md-8 
+		col-md-9 
+		col-md-10 
+		col-md-11 
+		col-md-12
+		
+    classes for large device 
+		col-lg-1 
+		col-lg-2 
+		col-lg-3 
+		col-lg-4 
+		col-lg-5 
+		col-lg-6 
+		col-lg-7 
+		col-lg-8 
+		col-lg-9 
+		col-lg-10 
+		col-lg-11 
+		col-lg-12
+		
+     classes for extra large device 
+		col-xl-1 
+		col-xl-2 
+		col-xl-3 
+		col-xl-4 
+		col-xl-5 
+		col-xl-6 
+		col-xl-7 
+		col-xl-8 
+		col-xl-9 
+		col-xl-10 
+		col-xl-11 
+		col-xl-12
+---------------------------------------------
+	While designing a page in bootstrap follow these steps 
+		1. in head section include bootstrap.css file 
+		2. in body call these classes 
+				a. container - it has gap from left and right side 
+				b. container-fluid  - it has no gap from any side , it cover full width
+		3. in side container / container-fluid follow the class 
+			   a. row 
+		4. in side row , follow any 12 classes from given 60.
+	
+	body->container->row->columns( any 12);
+
+	-------------------
+
+	60 + container, container-fluid, row
+	60 + 3 = 63
+
+	------------------
+
+	For text alignment :
+
+		text-left
+		text-right
+		text-center
+		text-justify
+
+	For text color :
+
+		text-primary
+		text-success
+		text-danger
+		text-info
+		text-secondary
+		text-warning
+		text-white
+		text-light
+
+	For background color :
+
+		bg-primary
+		bg-success
+		bg-danger
+		bg-info
+		bg-secondary
+		bg-warning
+		bg-white
+		bg-light
+		bg-dark
+		jumbotron - little different than other bg colors
+
+	For table : 
+
+		table
+		table-bordered
+		table-hover
+		table-sm
+
+	For card : 
+
+		card-header
+		card-body
+		card-footer
+
+			colors :  
+				all bg colors
+				all text colors	
+	
+	For navigation :
+
+		Left navigation :
+
+			list-group
+			list-group-item
+			active
+
+		Top navigation
+
+			list-group
+			list-group-horizontal
+			list-group-item
+
+	For Pagination :
+
+		pagination
+		page-item
+		page-link
+		active
+
+	For input fields :
+
+		form-group
+		form-control
+
+	For button :
+
+		color :
+
+			btn
+			btn-primary
+			btn-success
+			btn-danger
+			bg-info
+			btn-secondary
+			btn-warning
+			btn-white
+			btn-light
+			btn-dark
+
+		size: 
+
+			btn-sm
+			btn-md
+			btn-lg
+			btn-block
+
+
+
+
+
+		
+
+
+
+	
