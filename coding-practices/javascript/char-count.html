@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            findTextLen = (inputText) => {
+                document.getElementById('textCount').innerText = inputText.length;
+                document.getElementById('textCont').innerText = inputText;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h2>Find the string length</h2>
+            <p>
+                <textarea id="txtAr" rows="5" cols="40" onkeyup="findTextLen(this.value);"></textarea>
+            </p>
+            Content length : <span id="textCount"> 0 </span>
+            <br/> <br/>
+            Content : <span id="textCont"> 0 </span>
+        </center>
+    </body>
+</html>

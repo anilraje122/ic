@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            var data = "<h1> Hello, How are you? </h1>";
+            functionOne = () => {
+                document.getElementById('msg').innerText = data;
+            }
+            functionTwo = () => {
+                document.getElementById('msg').innerHTML = data;
+            }
+            functionThree = (input) => {
+                document.getElementById('msg').innerText = input;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>JS output element</h1>
+            <p><button onclick="functionOne();">Show Message - innerText</button></p>
+            <p><button onclick="functionTwo();">Show Message - innerHTML</button></p>
+            <p>
+                <select onchange="functionThree(this.value)">
+                    <option value="">-- Choose --</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kochi">Kochi</option>
+                </select>
+            </p>
+            <p>
+                <div id="msg"></div>
+            </p>
+        </center>
+    </body>
+</html>

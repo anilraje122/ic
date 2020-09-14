@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+             // Single dimensional array
+            let item = ["php", "java", "python", "node", "react", "html", "js"];
+
+            showArr = () => {
+                let data = "";
+                for(let i=0; i<item.length; i++) {
+                    data = data + "<tr>";
+                    data = data + "<td>" + (i+1) + "</td>";
+                    data = data + "<td>" + item[i] + "</td>";
+                    data = data + "<td><button onclick='deleteItem("+i+")'>Delete</td>";
+                    data = data + "</tr>";
+                }
+                document.getElementById('bookList').innerHTML = data;
+            }
+            saveItem = () => {
+                newItem = document.getElementById('newItem').value;
+                item.push(newItem);
+                showArr();
+                document.getElementById('msg').innerText = "Item added successfully!";
+                document.getElementById('msg').style.color = "green";
+            }
+            deleteItem = (index) => {
+                item.splice(index, 1);
+                showArr();
+                document.getElementById('msg').innerText = "Item deleted successfully!";
+                document.getElementById('msg').style.color = "red";
+            }
+        </script>
+    </head>
+    <body onload="showArr();">
+        <table align="center" cellpadding="10" border="1">
+            <tr>
+                <th>New Item Name</th>
+                <td>
+                    <input type="text" id="newItem">
+                </td>
+                <td>
+                    <button onclick="saveItem();">Save</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p id="msg" align="center"></p>
+        <br>
+        <table align="center" cellpadding="10" border="1">
+            <thead>
+                <tr>
+                    <th>SL No</th>
+                    <th>Book Name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookList">
+                <tr>
+                    <th colspan="3">
+                        No Records
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

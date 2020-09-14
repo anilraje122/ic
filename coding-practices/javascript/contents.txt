@@ -1,0 +1,68 @@
+
+
+	1. How to run javascript file using nodejs
+
+		a. Create a file.js
+		b. Write some statements
+		c. Run this command in cmd : node file.js
+		d. It shows the output in cmd
+
+		eg: test.js
+
+	2. Variable and datatypes
+
+		eg: variable.js
+
+	3. Function in js
+
+	4. Events in js 
+
+		a. Mouse
+			1. onclick
+			2. ondbclick
+			3. onmousedown
+			4. onmousemove
+			5. onmouseout
+			6. onchange
+		
+		b. Keyboard
+			1. onkeypress
+			2. onkeydown
+			3. onkeyup
+			4. onfocus
+			5. onblur
+
+	5. Data binding
+	
+		The communication between HTML and js
+			a. 1 way binding
+			b. 2 way binding
+			c. event based binding
+			d. js to HTML (output element)
+			e. js to HTML (input element)
+		
+		HTML has 2 types of elements
+			a. input element : js can communicate with input element using "value" property
+			b. output element : js can communicate with output element using "innerText" and "innerHTML" properties 
+			
+		Note : HTML tags are called elements in js
+
+	6. Control structure : it is used to control the flow of data in application
+
+		Conditions : 
+
+			a. if else 
+			b. if else if
+			c. nested if
+			d. switch case
+
+		Loops : 
+
+			a. for
+			b. while
+			c. do while
+
+
+
+
+	

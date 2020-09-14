@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="class5.js"></script>
+    </head>
+    <body>
+        <center>
+            <h3>OOPs Inheritance - Data from parent and child classes</h3>
+            <button onclick="obj.getInvoice();">Get Data</button>
+            <br/><br/>
+            <table align="center" cellpadding="10">
+                <caption><h3>New Item</h3></caption>
+                <tr>
+                    <th>Item Name</th>
+                    <td>
+                        <input type="text" id="pname">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Item Price</th>
+                    <td>
+                        <input type="text" id="pprice">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Quantity</th>
+                    <td>
+                        <input type="text" id="pqty">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button onclick="obj.update();">Update Data</button>
+                    </th>
+                </tr>
+            </table>
+            <br/><br/>
+            <div id="itemList"></div>
+        </center>
+    </body>
+</html>

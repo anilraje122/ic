@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <script>
+            showService = (serviceName) => {
+                if(serviceName == "Other") {
+                    document.getElementById('service-block').style.display = 'block';
+                } else {
+                    document.getElementById('service-block').style.display =  'none';
+                }
+            }
+            inputCheck = () => {
+                // name validtion
+                var name = document.getElementById('fname').value;
+                name = name.trim();
+
+                if(name === '') {
+                    document.getElementById('fname').style.border = '2px solid red';
+                } else {
+                    document.getElementById('fname').style.border = '2px solid green';
+                }
+
+                // email validation
+                var email = document.getElementById('email').value;
+                email = email.trim();
+                
+                if(email === '') {
+                    document.getElementById('email').style.border = '2px solid red';
+                } else {
+                    document.getElementById('email').style.border = '2px solid green';
+                }
+
+                // service validation
+                var service = document.getElementById('service').value;
+                service = service.trim();
+                
+                if(service === '') {
+                    document.getElementById('service').style.border = '2px solid red';
+                } else {
+                    document.getElementById('service').style.border = '2px solid green';
+                }
+
+                // check sub sections
+                if(service == "Other") {                    
+                    var appType = document.getElementById('appType').value;
+                    appType = appType.trim();
+                
+                    if(appType === '') {
+                        document.getElementById('appType').style.border = '2px solid red';
+                    } else {
+                        document.getElementById('appType').style.border = '2px solid green';
+                    }
+
+                    // service validation
+                    var pages = document.getElementById('pages').value;
+                    pages = pages.trim();
+                    
+                    if(pages === '') {
+                        document.getElementById('pages').style.border = '2px solid red';
+                    } else {
+                        document.getElementById('pages').style.border = '2px solid green';
+                    }
+                }
+
+                // check tnc checkbox validation
+
+                var tnc = document.getElementById('tnc').checked;
+                if(!tnc) {
+                    document.getElementById('tncerror').innerText = "Please select T & C"
+                } else {
+                    document.getElementById('tncerror').innerText = "";
+                }
+
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <h2>Javascript with control structure</h2>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <th>Full Name</th>
+                    <td>
+                        <input type="text" id="fname">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select Services</th>
+                    <td>
+                        <select id="service" onchange="showService(this.value)">
+                            <option value="">-- Choose --</option>
+                            <option value="Java">Java</option>
+                            <option value="Php">Php</option>
+                            <option value="Node">Node</option>
+                            <option value="Other">Other technologies</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Your Message</th>
+                    <td>
+                        <textarea id="message" rows="5" cols="25"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table align="center" cellpadding="10">
+                <tr id="service-block" style="display: none;">
+                    <td>
+                        <fieldset>
+                            <legend>Enter your Requirement</legend>
+                            <table width="100%" cellpadding="10">
+                                <tr>
+                                    <th>Type of App</th>
+                                    <td>
+                                        <select id="appType">
+                                            <option value="">-- Choose --</option>
+                                            <option value="php">Php App</option>
+                                            <option value="python">Python App</option>
+                                            <option value="node">NodeJs App</option>
+                                            <option value="React">React Js App</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>How many pages?</th>
+                                    <td>
+                                        <select id="pages">
+                                            <option value="">-- Choose --</option>
+                                            <option value="1to5">1 to 5</option>
+                                            <option value="5tp10">5 to 10</option>
+                                            <option value="15to20">15 to 20</option>
+                                            <option value="25to30">25 to 30</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Upload Document</th>
+                                    <td>
+                                        <input type="file" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>
+                        <input type="checkbox" checked id="tnc"> I agree on term
+                        <p id="tncerror"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <button onclick="inputCheck();">Send Message</button>
+                    </th>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

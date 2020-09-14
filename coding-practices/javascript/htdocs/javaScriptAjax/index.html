@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <script>
+
+            // get all items from items.json file and display them
+            getItem = () => {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let items = JSON.parse(this.responseText); // JSON to Array conversion
+                        // document.getElementById("total").innerText = "Total no. of items : "+items.length;
+                        let data = "<div class='row'>";
+                        for(let i=0; i<items.length; i++) {
+                            data += "<div class='col-md-4'><p>" + items[i] + "</p></div>"; // Dynamic HTML creation
+                        }
+                        data = data + "</div>";
+                        document.getElementById("itemList").innerHTML = data;
+                    }
+                };
+                xmlhttp.open("GET","item.json",true);
+                xmlhttp.send();
+            }
+
+            // get all user details from user.json and display them
+            getUser = function() {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let items = JSON.parse(this.responseText); // JSON to Array conversion
+                        // document.getElementById("total").innerText = "Total no. of customers : "+items.length;
+                        let data = "<div class='row'>";
+                        for(let i=0; i<items.length; i++) {
+                            data += "<div class='col-md-6'><p class='border p-2'> Full Name : " + items[i].name + ", Mobile Number : " + items[i].mobile + "</p></div>"; // Dynamic HTML creation
+                        }
+                        data = data + "</div>";
+                        document.getElementById("itemList").innerHTML = data;
+                    }
+                };
+                xmlhttp.open("GET","user.json",true);
+                xmlhttp.send();
+            }
+
+            // get gallery
+            getGallery = () => {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {                   
+                        document.getElementById("itemList").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET","gallery.html",true);
+                xmlhttp.send();
+            }
+
+            // get contact
+            getContact = () => {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {                   
+                        document.getElementById("itemList").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET","contact.html",true);
+                xmlhttp.send();
+            }
+        </script>
+        <link rel="stylesheet" href="bootstrap-4/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="m-4">Js Ajax Example</h3>
+                    <div class="btn-group m-2">
+                        <button class="btn btn-primary">Home</button>
+                        <button class="btn btn-secondary" onclick="getItem();">Show Item</button>
+                        <button class="btn btn-info" onclick="getUser();">Show Customer</button>
+                        <button class="btn btn-warning" onclick="getGallery();">Gallery</button>
+                        <button class="btn btn-success" onclick="getContact();">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="row">
+                <!-- <h3 id="total"> No Records!  </h3> -->
+                <div class="col-md-3">
+                    <ul class="list-group"> 
+                        <li class="list-group-item active">Navigation</li>
+                        <li class="list-group-item">Marketing</li>
+                        <li class="list-group-item">Sales</li>
+                        <li class="list-group-item">Service</li>
+                        <li class="list-group-item">Retail</li>
+                        <li class="list-group-item">Education</li>
+                        <li class="list-group-item">Software</li>
+                        <li class="list-group-item">Banking</li>
+                    </ul>
+                </div>
+                <div class="col-md-9"  id="itemList"></div>
+            </div>
+        </div>
+    </body>
+</html>

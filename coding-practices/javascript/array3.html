@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            table {
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body onload="myItem();">
+        <table border="1" cellpadding="10" align="center">
+            <tr>
+                <td> Item Name
+                    <input type="text" id="itemName"/>
+                </td>
+                <td> Item Price
+                    <input type="text" id="itemPrice"/>
+                </td>
+                <td> Item Qty
+                    <input type="text" id="itemQty"/>
+                </td>
+                <td>
+                    <button onclick="save()">Save</button>
+                </td>
+            </tr>
+        </table>
+
+            <tbody id="itemList"></tbody>
+        </table>
+        <table border="1" cellpadding="10" align="center">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Item Qty</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="itemList"></tbody>
+        </table>
+    </body>
+    <script>
+
+        let item = [
+            {"name":"Apple", "price":200, "qty": 20},
+            {"name":"Mango", "price":100, "qty": 10},
+            {"name":"Orange", "price":400, "qty": 40},
+            {"name":"Banana", "price":250, "qty": 70},
+            {"name":"Lemon", "price":300, "qty": 60}
+        ];
+
+        myItem = () => {
+            let data = "";
+            for(let i=0; i<item.length; i++) {
+                data = data + "<tr>";
+                data = data + "<td>"+ item[i].name + "</td>";
+                data = data + "<td>"+ item[i].price + "</td>";
+                data = data + "<td>"+ item[i].qty + "</td>";
+                data = data + "<td> <button onclick='deleteItem("+ i +");'> Delete</button> </td>";
+                data = data + "</tr>";
+            }
+            document.getElementById('itemList').innerHTML = data;
+        }
+
+        save = () => {
+            let n = document.getElementById('itemName').value;
+            let p = document.getElementById('itemPrice').value;
+            let q = document.getElementById('itemQty').value;
+            var newItem = {"name": n, "price": p, "qty": q};
+            item = item.concat(newItem);
+            myItem();
+        }
+
+        deleteItem = (index) => {
+            item.splice(index, 1);
+            myItem();
+        }
+    </script>
+</html>

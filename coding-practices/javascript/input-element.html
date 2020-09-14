@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script>
+            showAlert = () => {
+                var data = document.getElementById('abc').value;
+                alert(data);
+            }
+            enable = () => {
+                document.getElementById('abc').disabled = false;
+            }
+            disable = () => {
+                document.getElementById('abc').disabled = true;
+            }
+            hideVal = () => {
+                document.getElementById('abc').type = 'password'
+            }
+            showVal = () => {
+                document.getElementById('abc').type = 'text'
+            }
+            addBorder = () => {
+                document.getElementById('abc').style.border = '5px solid red';
+            }
+            delBorder = () => {
+                document.getElementById('abc').style.border = '';
+            }
+            imgSm = () => {
+                document.getElementById('myImg').height = '50';
+                document.getElementById('myImg').width = '50';
+            }
+            imgMd = () => {
+                document.getElementById('myImg').height = '100';
+                document.getElementById('myImg').width = '100';
+            }
+            imgLg = () => {
+                document.getElementById('myImg').height = '200';
+                document.getElementById('myImg').width = '200';
+            }
+            addImgBorder = () => {
+                document.getElementById('myImg').style.border = '5px solid red';
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h2>Javascript and Input tag communication</h2>
+            <p>
+                Text Box : <input type="text" id="abc" class="xyz" name="name" placeholder="Enter Name" size="25" disabled="disabled"/>
+            </p>
+            <button onclick="showAlert();">Show value in alert</button>
+            <button onclick="enable();">Enable text box</button>
+            <button onclick="disable();">Disable text box</button>
+            <button onclick="hideVal();">Hide text box value</button>
+            <button onclick="showVal();">Show text box value</button>
+            <button onclick="addBorder();">Apply border to text box</button>
+            <button onclick="delBorder();">Remove border to text box</button>
+
+            <br/> <br/>
+
+            <h2> Javascript image handling</h2>
+            <button onclick="imgSm();">small</button>
+            <button onclick="imgMd();">medium</button>
+            <button onclick="imgLg();">large</button>
+            <button onclick="addImgBorder();">Apply border</button>
+            <br/> <br/>
+            <img src="images/6.jpg" height="150" width="150" id="myImg" />
+
+        </center>
+    </body>
+</html>

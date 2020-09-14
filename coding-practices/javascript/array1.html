@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <h2>Read data from single directional array</h2>
+            New item : <input type="text" id="newItem">
+            <button onclick="saveItem();">Save Item</button>
+            <button onclick="saveItemUnshift();">Save First</button>
+            <button onclick="saveItemSplice();">Save Anywhere</button>
+            <button onclick="showArr();">Show Array Items</button>
+            
+            <p id="itemList">
+                no records!
+            </p>
+        </center>
+    </body>
+    <script>
+        // Single dimensional array
+        let item = ["apple", "Mango", "Banana", "Orange", "Grapes", 100, 200];
+
+        showArr = () => {
+            let data = '<h2> Available Array Items</h2>';
+            for(let i=0; i<item.length; i++) {
+                data = data + "<p>" + item[i] + "</p>";
+            }
+            document.getElementById('itemList').innerHTML = data;
+        }
+
+        saveItem = () => {
+            newItem = document.getElementById('newItem').value;
+            item.push(newItem);
+            showArr();
+        }
+
+        saveItemUnshift = () => {
+            newItem = document.getElementById('newItem').value;
+            item.unshift(newItem);
+            showArr();
+        }
+
+        saveItemSplice = () => {
+            newItem = document.getElementById('newItem').value;
+            let pos = prompt("Enter the position between 0 to "+(item.length-1));
+            item.splice(pos, 0, newItem);
+            showArr();
+        }
+    </script>
+</html>

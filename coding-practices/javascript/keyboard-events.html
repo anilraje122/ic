@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <center>
+            <h1> JS Keyboard Events</h1>
+            Onchange :  <select onchange="functionOne(this.value)">
+                        <option value="">-- Choose City --</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+            <p> onkeypress : <input type="text" onkeypress="functionOne(this.value);"/> </p>
+            <p> onkeyup : <input type="text" onkeyup="functionOne(this.value);"/> </p>
+            <p> onkeydown : <input type="text" onkeydown="functionOne(this.value);"/> </p>
+            <p> onfocus : <input type="text" onfocus="functionOne(this.value);"/> </p>
+            <p> onblur : <input type="text" onblur="functionOne(this.value);"/> </p>
+
+        </center>
+    </body>
+    <script>
+        functionOne = (input=null) => {
+            console.log(`You have selected : ${input}`);
+        }   
+    </script>
+</html>

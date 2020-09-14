@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            checkGender = (selection) => {
+                document.getElementById('result').innerText = selection;
+            }
+        </script>
+    </head>
+    <body>
+        <h2> Javascript and radio button</h2>
+        <p>
+            Male <input type="radio" name="gender" value="male" onclick="checkGender(this.value);" />
+            Female <input type="radio" name="gender" value="female" onclick="checkGender(this.value);" />
+        </p>
+        <p>
+            Selected Gender : <span id="result"></span>
+        </p>
+    </body>
+</html>

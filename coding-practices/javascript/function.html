@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JS Functions</title>
+        <script>
+            hello = (a, b) => {
+                var c = a + b;
+                alert(c);
+            }
+
+            hello2 = () => {
+                var a = prompt("Enter a first no : ");
+                var b = prompt("Enter a second no : ");
+                var c = parseInt(a) + parseInt(b);
+                alert(c);
+            }
+
+            hello3 = () => {
+                console.log("its working!");
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <h2>Javascript with mouse events</h2>
+            <button onclick="hello(10, 10);">What is 10 + 10 ?</button>
+            <button onclick="hello2();">Add two numbers</button>
+            <button onclick="hello3();">Show in console</button>
+        </center>
+    </body>
+</html>

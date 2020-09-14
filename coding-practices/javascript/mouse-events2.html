@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <center>
+            <h1>JS Mouse Events</h1>
+            <button onclick="functionOne();">Single click</button>
+            <button ondblclick="functionOne();">Double click</button>
+            <button onmousemove="functionOne();">Move mouse in to button</button>
+            <button onmouseout="functionOne();">Move mouse out of button</button>
+            <button onmousedown="functionOne();">Left or right click</button>
+
+            <select onchange="functionOne(); functionTwo(this.value);">
+                <option value="">--Choose --</option>
+                <option value="1">Bangalore</option>
+                <option value="2">Chennai</option>
+                <option value="3">Kochi</option>
+                <option>Pune</option>
+            </select>
+        </center>
+    </body>
+    <script>
+        functionOne = () => {
+            alert("Event Working!"); // type of pop up window
+        }
+
+        functionTwo = (input) => {
+            alert(input);
+        }
+    </script>
+</html>

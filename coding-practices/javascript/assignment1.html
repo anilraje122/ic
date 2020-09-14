@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .col-md-2, .col-md-8 {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body onload="showArr();">
+    <div class="container">
+        <div class="row m-5">
+            <div class="col-md-2 border "></div>
+            <div class="col-md-8 border p-4">
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputText" placeholder="Item Name">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-success" onclick="saveItem();">Save</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p id="msg" class="text-success"></p>
+                    </div>
+                </div>
+                <div class="row" id="outputRow">
+
+                </div>
+            </div>
+            <div class="col-md-2 border"></div>
+        </div>
+    </div>
+</body>
+<script>
+    // Single dimensional array
+   let item = ["php", "java", "python", "node"];
+
+   showArr = () => {
+       let data = "";
+       for(let i=0; i<item.length; i++) {
+           data = data + "<div class='col-md-3 bg-secondary text-center text-white p-2'>";
+            data = data + item[i];
+           data = data + "</div>";
+       }
+       document.getElementById('outputRow').innerHTML = data;
+   }
+   saveItem = () => {
+       newItem = document.getElementById('inputText').value;
+       item.push(newItem);
+       showArr();
+       document.getElementById('msg').innerText = "Item added successfully!";
+       document.getElementById('msg').style.color = "green";
+   }
+</script>
+</html>
