@@ -1,0 +1,106 @@
+body {
+    background: skyblue;
+    margin: 80px;
+    margin-top: 40px;
+}
+
+#nav {
+    padding: 15px;
+    background: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#nav li {
+    display: inline;
+    margin: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+#banner{
+	height:300px;
+	padding-top:100px;
+	font-size:40px;
+	text-align:center;
+	font-weight:bold;
+	
+	background-image:url("1.jpg");
+	background-size:100%;
+	background-position:center;
+	
+	animation:mybanner;   /* animation name */
+	animation-iteration-count:5;   /* animation count, how many times */
+	animation-duration:5s;  /* each animation duration for each time */
+}
+
+#infosection {
+    margin: 0px;
+    background: grey;
+    color: blue;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+#infosection li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 2%;
+    width: 29.1%;
+}
+#infosection li:hover {
+    background:orange !important;
+    color: green !important;
+}
+
+/* media query starts here */
+
+@media screen and (min-width:1px) and (max-width:600px) {
+    body {
+        background: green !important;
+    }
+    #nav li {
+        display: block !important;
+        width: 100%;
+    }
+    #infosection li {
+        display: block !important;
+        width: 96%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    body {
+        background: orange !important;
+    }
+    #nav li {
+        display: block !important;
+        width: 100% !important;
+    }
+    #infosection li {
+        display: block !important;
+        width: 96% !important;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1000px) {
+    body {
+        background: blue !important;
+    }
+}
+
+@keyframes mybanner{
+	
+	25%{ background-image:url("2.jpg"); color:red;}
+	50%{ background-image:url("3.jpg"); color:blue;}
+	75%{ background-image:url("4.jpg"); color:orange;}
+	/* @ 100% 1.jpg will apply as default */
+}
+
+

@@ -1,0 +1,167 @@
+/* by default is set to extra large device */
+body{
+	background:lightgreen;
+	margin:200px;
+	margin-top:40px;
+}
+
+
+#nav{
+	padding:15px;
+	background:white;
+	text-align:left;
+	margin:0px;
+	border-radius:20px 20px 0px 0px;
+}
+
+#nav li{
+	display:inline;
+	margin:20px;
+}
+
+#nav li a{
+	text-decoration:none;
+	color:blue;
+	font-weight:bold;
+}
+
+#nav li a:hover{
+	color:red;
+}
+
+@keyframes mybanner{
+	
+	25%{ background-image:url("2.jpg"); color:red;}
+	50%{ background-image:url("3.jpg"); color:blue;}
+	75%{ background-image:url("4.jpg"); color:orange;}
+	/* @ 100% 1.jpg will apply as default */
+}
+
+#banner{
+	height:300px;
+	padding-top:100px;
+	font-size:40px;
+	text-align:center;
+	font-weight:bold;
+	
+	background-image:url("1.jpg");
+	background-size:100%;
+	background-position:center;
+	
+	animation:mybanner;   /* animation name */
+	animation-iteration-count:5;   /* animation count, how many times */
+	animation-duration:5s;  /* each animation duration for each time */
+}
+
+
+#infosection{
+	margin:0px;
+	padding:0px;
+	background:grey;
+	color:white;
+	text-align:center;
+}
+
+#infosection li{
+	display:inline-block;
+	font-size:18px;
+	padding:2.3%;
+	width:28.33333333333%;
+}
+
+#infosection li:hover{
+	background:orange !important;
+	color:green !important;
+}
+
+#container{
+	padding:2%;
+	min-height:400px;
+	background:white;
+}
+
+#footer{
+	padding:2%;
+	height:200px;
+	background:black;
+	color:white;
+	text-align:center;
+	border-radius:0px 0px 20px 20px;
+}
+
+.title{
+	color:orange;
+	font-size:30px;
+}
+
+.service{
+	margin:1%;
+	float:left;
+	width:31.33%;
+	text-align:center;
+}
+
+.clearblock{
+	clear:both;
+}
+
+.red{ color:red; }
+.green{ color:green; }
+.blue{ color:blue; }
+
+.service .fa:hover{
+	color:orange !important;
+}
+
+
+/* 
+	media query start here 
+	Responsive Design : Those webpage , that fit (re-arrange) the contents of webpage according to device.
+*/
+
+@media screen and (min-width:1px) and (max-width:600px){
+	body{
+		background:green !important;
+		margin:10px !important;
+	}
+	
+	#nav li{
+		display:block !important;
+	}
+	
+	#infosection li{
+		display:block !important;
+		width:96% !important;
+	}
+}
+
+/* for medium device */
+
+@media screen and (min-width:601px) and (max-width:800px){
+	body{
+		background:blue !important;
+		margin:10px !important;
+	}
+	
+	#nav li{
+		display:block !important;
+	}
+	
+	#infosection li{
+		display:block !important;
+		width:96% !important;
+	}
+}
+
+
+/* for large device */
+
+@media screen and (min-width:801px) and (max-width:1000px){
+	body{
+		background:skyblue !important;
+	}
+}
+
+
+
+
