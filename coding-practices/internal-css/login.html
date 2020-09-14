@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                margin:0;
+            }
+            #top {
+                background-color:black;
+                padding: 8px;
+                color: white;
+            }
+            #logo-block {
+                height: 90px;
+            }
+            #top-nav {
+                background-color: crimson;
+                padding: 15px;
+                text-align: center;
+                margin:0;
+            }
+            #top-nav li {
+                display:inline;
+                margin:10px;
+            }
+            #top-nav li a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 10px;
+                text-transform:uppercase;
+                border-radius: 5px;
+            }
+            #top-nav li a:hover {
+                background-color:green;
+            }
+            #container {
+                width: 78%;
+                padding: 1%;
+                margin: auto;
+                min-height: 300px;
+            }
+            .title {
+                color:crimson;
+            }
+            #footer {
+                height: 150px;
+                padding:10px; 
+                color:white;
+                text-align: center;
+                background-image:linear-gradient(mediumseagreen,black)
+            }
+            #left-container {
+                float:left;
+                width: 21%;
+                min-height: 225px;
+                box-shadow: 0px 0px 20px grey;
+                margin-right: 2%;
+                padding:1%;
+                border-radius: 10px;
+            }
+            #right-container {
+                float:left;
+                width:70%;
+                min-height: 300px;
+                margin-left: 3%;
+                padding:1%;
+            }
+            .clear-block {
+                clear:both
+            }
+            #left-nav {
+                list-style-type: square;
+            }
+            #left-nav li {
+                line-height: 30px;
+                color:blue;
+            }
+            #left-nav li:hover {
+                color: crimson;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .product {
+                margin: 1%;
+                padding: 1%;
+                width: 21%;
+                height: 200px;
+                box-shadow: 0px 0px 5px orange;
+                border-radius:0px;
+                float:left;
+            }
+            .product img {
+                width: 100%;
+                height: 100px;  
+            }
+            #logo {
+                background-image: linear-gradient(red,blue,green);
+                height: 25px;
+                width: 25px;
+                margin: 10px;
+                margin-left:10px;
+                border-radius: 50%;
+                color:white;
+                padding:25px;
+            }
+            #contact {
+                width: 400px;
+                padding: 10px;
+                margin: auto;
+                border: 2px solid crimson;
+                border-radius: 20px;
+            }
+            legend {
+                background:orange;
+                padding: 5px 15px 5px;
+                border-radius: 20px;
+                font-weight: bold;
+                color: blue;
+                font-size: 20px;
+            }
+            .input-box {
+                width: 100%;
+                height: 25px;
+                margin: 5px;
+            }
+            .big-box {
+                resize:none;
+                height: 80px;
+            }
+            #contact table {
+                width: 95%;
+            }
+            .btn {
+                margin: 10px;
+                background-color:orange;
+                color: blue;
+                padding: 10px 20px 10px;
+                border:none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            .btn:hover {
+                background-color:blue;
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top"> <marquee>call for more update 24234234234</marquee></div>
+        <div id="logo-block">
+            <div id="logo">ARE</div>
+        </div>
+        <ul id="top-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        
+        <div id="container">
+            <fieldset id="contact">
+                <legend>Login</legend>
+                <table>
+                    <tr>
+                        <th>Email ID</th>
+                        <td><input type="email" class="input-box"></td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td><input type="password" class="input-box"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button type="submit" class="btn">Login</button>
+                        </th>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div id="footer">
+            <p>This is the footer!</p>
+        </div>
+    </body>
+</html>

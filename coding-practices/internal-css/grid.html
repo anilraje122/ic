@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style type="text/css">
+            .container {
+                margin: 0 auto;
+            }
+            .box {
+                width: 200px;
+                height: 100px;
+                float: left;
+                margin: 10px;
+                background-color: green;
+            }
+            /*Media Query*/
+            @media screen and (min-width:1px) and (max-width:600px){
+                .box {
+                    background-color: black;
+                }
+            }
+            @media screen and (min-width:601px) and (max-width:1500px){
+                .box {
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
