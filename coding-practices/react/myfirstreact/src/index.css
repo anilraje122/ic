@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 #top-nav {
   margin: 0px;
   background: cornflowerblue;
@@ -18,12 +22,13 @@ body {
 #top-nav li {
   display: inline;
   padding: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .container {
-  /* min-height: 100vh; */
-  min-height: 500px;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 700px;
 }
 
 #footer {
@@ -33,4 +38,13 @@ body {
   padding: 10px;
   text-align: center;
   margin-top: 25px;
+}
+
+.myLink  {
+  text-decoration: none;
+  color:white;
+}
+
+.myLink:hover {
+  color: blue;
 }

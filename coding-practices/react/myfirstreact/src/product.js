@@ -9,7 +9,7 @@ const productList = [
 ]
 
 export default function myProduct() {
-    return <>
+    return <div className="container">
                 <h2>From product component</h2>
                 <p>Product component works</p>
                 <h3>Total products : {productList.length}</h3>
@@ -32,7 +32,7 @@ export default function myProduct() {
                         })
                     }
                 </table>
-           </>
+           </div>
 }
 
 // export default myProduct;

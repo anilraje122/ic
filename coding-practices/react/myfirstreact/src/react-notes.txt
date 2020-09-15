@@ -1,4 +1,13 @@
 
+Installing and creating new React Project :
+
+    1. https://reactjs.org/docs/create-a-new-react-app.html
+
+Installing external libraries :
+
+    1. npm install react-router-dom
+
+
 JSX Rules :
 
     1. parent tag is not required if there is only single html tag

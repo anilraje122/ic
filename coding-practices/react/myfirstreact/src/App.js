@@ -1,22 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import hello from './test.js';
+import test from './test.js';
 import myUser from './user.js';
 import myProduct from './product';
 import Nav from './header';
-import footer from './footer';
+import Footer from './footer';
+import TechList from './tech';
+import Mystate from './state';
+import  {Route, JashRouter, HashRouter} from 'react-router-dom';
+
+const myPage =  (
+                  <HashRouter>
+                    <Nav />
+                    <Route exact path="/" component={test} />
+                    <Route path="/user" component={myUser} />
+                    <Route path="/product" component={myProduct} />
+                    <Route path="/tech" component={TechList} />
+                    <Route path="/state" component={Mystate} />
+                    <Footer />
+                  </HashRouter>
+                );
 
 function App() {
-  return  [
-            <Nav/>,
-            <h1>Welcome to my first React App</h1>,
-            <p>hello p tag</p>,
-            hello(),
-            myUser(),
-            myProduct(),
-            footer()
-          ]
+  return  myPage;
 }
 
 export default App;

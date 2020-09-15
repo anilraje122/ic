@@ -3,7 +3,7 @@ import React from 'react';
 const userList = ["Anil", "Sunil", "Binil", "Vinil", "Dinil"]
 
 const myUser = function() {
-    return <hello>
+    return <div className="container">
                 <h2> From user component</h2>
                 <p>User component works!!</p>
                 <h3>Total users : {userList.length}</h3>
@@ -14,7 +14,7 @@ const myUser = function() {
                     })
                     // userList.map(user => <p>{user}</p>) //ES6 way
                 }
-            </hello>
+            </div>
 }
 
 export default myUser;
