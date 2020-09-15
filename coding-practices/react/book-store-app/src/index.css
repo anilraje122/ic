@@ -1,0 +1,66 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#top-nav {
+  margin:0;
+  width: 100%;
+  text-align: center;
+  background: #9d65c9;
+  padding: 20px;
+}
+
+#top-nav li {
+  display: inline;
+  padding: 0 30px;
+}
+
+#container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 90vh;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  text-align: center;
+  padding: 0 20px;
+}
+
+#books, #customers, #book-register {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 50px;
+}
+
+#books table, #customers table, #book-register table {
+  margin-top: 15px;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  background: #9d65c9;
+  color:white;
+  padding: 20px;
+  font-size: 13px;
+  margin-top: 20vh;
+}

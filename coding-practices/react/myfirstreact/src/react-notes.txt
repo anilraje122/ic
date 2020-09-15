@@ -1,0 +1,50 @@
+
+JSX Rules :
+
+    1. parent tag is not required if there is only single html tag
+    2. if there are more than one html tags :
+        a. keep a parent tag. it can be div/p or any container tags
+            Eg: <div>
+                    <h1>hello h1 </h1>
+                    <h2>hello h2 </h2>
+                </div>
+        b. instead of any parent tag it can be any user defined tag
+            Eg: <hello>
+                    <h1>hello h1 </h1>
+                    <h2>hello h2 </h2>
+                </hello>
+        c. it can be an empty tag. instead of any predefined or userdefined tag
+            Eg: <>
+                    <h1>hello h1 </h1>
+                    <h2>hello h2 </h2>
+                </>
+        d. it can be an array structure
+            Eg: [
+                    <h1>hello h1 </h1>
+                    <h2>hello h2 </h2>
+                ]
+
+Notes: 
+    all independant tags like hr, br should be closed :
+        Eg:
+            <br/>
+            <hr/>
+            <input type="text" />
+
+---------------------------------------------------------
+
+components : 
+
+    1. Functional components
+        a. 
+        b.
+        c.
+        d.
+    2. Class components
+
+---------------------------------------------------------
+
+Todo :
+    1. Create new project
+    2. Create header, footer, array1, array2, function component, class component
+    
