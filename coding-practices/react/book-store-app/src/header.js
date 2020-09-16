@@ -12,12 +12,12 @@ class Header extends Component {
                 <div>
                     <ul id="top-nav">
                         <li><Link className="link" to="/">Home</Link></li>
+                        <li><Link className="link" to="/login">Login</Link></li>
+                        <li><Link className="link" to="/register">Register</Link></li>
+                        <li><Link className="link" to="/contact">Contact</Link></li>
                         <li><Link className="link" to="/books">Books</Link></li>
                         <li><Link className="link" to="/customers">Customers</Link></li>
                         <li><Link className="link" to="/book-register">Book-Register</Link></li>
-                        <li><Link className="link" to="/login">Login</Link></li>
-                        <li><Link className="link" to="/register">Register</Link></li>
-                        <li><Link className="link" to="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
             </div>

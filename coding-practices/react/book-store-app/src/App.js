@@ -3,7 +3,7 @@ import './App.css';
 import Header from './header';
 import Home from './home.js';
 import Footer from './footer';
-import showBooks from './books';
+import Books from './books';
 import showCustomers from './customers';
 import showBookRegister from './book-register';
 import Contact from './contact';
@@ -16,7 +16,7 @@ function App() {
     <HashRouter>
       <Header/>
       <Route exact path="/" component={Home} />
-      <Route path="/books" component={showBooks} />
+      <Route path="/books" component={Books} />
       <Route path="/customers" component={showCustomers} />
       <Route path="/book-register" component={showBookRegister} />
       <Route path="/login" component={Login} />

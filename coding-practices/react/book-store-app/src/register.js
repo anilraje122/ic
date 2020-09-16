@@ -8,8 +8,8 @@ class Register extends Component {
                     <form>
                         <h2>Register</h2>
                         <div class="form-group">
-                            <label for="email">Name</label>
-                            <input type="text" id="email" placeholder="Enter your Name"></input>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter your Name"></input>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
@@ -24,7 +24,7 @@ class Register extends Component {
                             <input type="password" id="pwd" placeholder="Enter your password"></input>
                         </div>
                         <div class="form-group">
-                            <label for="pwd">Confirm Password</label>
+                            <label for="pwdConfirm">Confirm Password</label>
                             <input type="password" id="pwdConfirm" placeholder="Enter your password again"></input>
                         </div>
                         <div class="form-group">

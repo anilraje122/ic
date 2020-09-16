@@ -8,10 +8,9 @@ class Nav extends Component {
                     <li><Link className="myLink" to="/user">User</Link></li>
                     <li><Link className="myLink" to="/product">Product</Link></li>
                     <li><Link className="myLink" to="/tech">Technology</Link></li>
-                    <li><Link className="myLink" to="/state">State Mgmt</Link></li>
-                    <li>State</li>
-                    <li>Props</li>
-                    <li>JSON API</li>
+                    <li><Link className="myLink" to="/state">State Mgmt 1</Link></li>
+                    <li><Link className="myLink" to="/state2">State Mgmt 2</Link></li>
+                    <li><Link className="myLink" to="/profile">Profile</Link></li>
                 </ul>
     }
 }

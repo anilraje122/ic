@@ -31,7 +31,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  width: 100%;
   background: black;
 }
 
@@ -113,17 +112,19 @@ th {
 
 #books table, #customers table, #book-register table {
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 #form-wrapper {
-  margin: 25px 0;
+  margin: 25px auto;
+  max-width:50%;
 }
 
 #form-wrapper form {
   margin: 0 auto;
   width:50%;
   border: 1px solid black;
-  padding: 20px;
+  padding: 10px;
 }
 #form-wrapper form .form-group {
   display: flex;
@@ -163,6 +164,28 @@ th {
 
 #forgotPwd:hover {
   color: crimson;
+}
+
+#btnAddBook {
+  padding: 5px 25px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  margin:0 auto;
+  display: block;
+}
+
+.updateBooks {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.updateBooks form h2 {
+  margin: 10px;
+}
+
+#bookAddStatus {
+  color: green;
+  font-weight: bold;
 }
 
 #footer {
