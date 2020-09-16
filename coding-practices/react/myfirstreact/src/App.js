@@ -6,7 +6,7 @@ import Nav from './header';
 import Footer from './footer';
 import TechList from './tech';
 import Mystate from './state';
-import  {Route, JashRouter, HashRouter} from 'react-router-dom';
+import  {Route, HashRouter} from 'react-router-dom';
 
 const myPage =  (
                   <HashRouter>

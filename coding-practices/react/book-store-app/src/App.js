@@ -1,22 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Nav from './nav';
-import Container from './container';
+import Header from './header';
+import Home from './home.js';
 import Footer from './footer';
 import showBooks from './books';
 import showCustomers from './customers';
 import showBookRegister from './book-register';
+import Contact from './contact';
+import Login from './login';
+import Register from './register';
+import {Route, HashRouter} from 'react-router-dom';
 
 function App() {
   return (
-    [
-      <Nav />,
-        showBooks(),
-        showCustomers(),
-        showBookRegister(),
-      <Footer />
-    ]
+    <HashRouter>
+      <Header/>
+      <Route exact path="/" component={Home} />
+      <Route path="/books" component={showBooks} />
+      <Route path="/customers" component={showCustomers} />
+      <Route path="/book-register" component={showBookRegister} />
+      <Route path="/login" component={Login} />
+      <Route path="/register" component={Register} />
+      <Route path="/contact" component={Contact} />
+      <Footer/>
+    </HashRouter> 
   );
 }
 
