@@ -15,15 +15,18 @@ export default function myProduct() {
                 <h3>Total products : {productList.length}</h3>
                 <h4>Products Details</h4>
                 <table cellPadding="10" border="1">
+                    <thead>
                     <tr>
                         <th>SL No</th>
                         <th>Item Name</th>
                         <th>Item Price</th>
                         <th>Item Qty</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     {
                         productList.map((item, index) => {
-                            return  <tr>
+                            return  <tr key={index}>
                                         <td>{Number(index)+1}</td>
                                         <td>{item.name}</td>
                                         <td>{item.price}</td>
@@ -31,6 +34,7 @@ export default function myProduct() {
                                     </tr>
                         })
                     }
+                    </tbody>
                 </table>
            </div>
 }

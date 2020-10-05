@@ -9,8 +9,8 @@ const myUser = function() {
                 <h3>Total users : {userList.length}</h3>
                 <h4>Users Details</h4>
                 {
-                    userList.map((user) => {
-                        return <p>{user}</p>    
+                    userList.map((user, index) => {
+                        return <p key={index}>{user}</p>    
                     })
                     // userList.map(user => <p>{user}</p>) //ES6 way
                 }

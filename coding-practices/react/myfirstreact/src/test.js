@@ -9,18 +9,20 @@ const test = () => {
                 <h3>Total books : {books.length}</h3>
                 <h4>Book Details </h4>
                 <table cellPadding="10" border="1">
+                    <tbody>
                     <tr>
                         <th>SL No</th>
                         <th>Book Name</th>
                     </tr>
                     {
                         books.map((book, index)=>{
-                            return  <tr>
+                            return  <tr key={index}>
                                         <td>{Number(index)+1}</td>
                                         <td>{book}</td>
                                     </tr>
                         })
                     }
+                    </tbody>
                 </table>
             </div>
 }

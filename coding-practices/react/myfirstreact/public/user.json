@@ -1,0 +1,10 @@
+[
+    {"name": "user1", "mobile": 7899179779, "city": "Bangalore", "age": 26},
+    {"name": "user2", "mobile": 7899179779, "city": "Pune", "age": 18},
+    {"name": "user3", "mobile": 7899179779, "city": "Kochi", "age": 19},
+    {"name": "user4", "mobile": 7899179779, "city": "Chennai", "age": 28},
+    {"name": "user5", "mobile": 7899179779, "city": "Delhi", "age": 25},
+    {"name": "user6", "mobile": 7899179779, "city": "Hyderabad", "age": 23},
+    {"name": "user7", "mobile": 7899179779, "city": "Mumbai", "age": 22},
+    {"name": "user8", "mobile": 7899179779, "city": "Trivandram", "age": 25}
+]

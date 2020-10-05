@@ -48,3 +48,8 @@ table {
 .myLink:hover {
   color: blue;
 }
+
+.mycard {
+  height: 400px !important;
+  overflow: hidden;
+}

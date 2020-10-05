@@ -16,12 +16,13 @@ class TechList extends Component {
         return (
             <div className="container">
                 <h2>Book Details</h2>
-                <table border="1" cellpadding="10"> 
+                <table border="1" cellPadding="10"> 
                     <thead>
                         <tr>
-                        <td colspan="4">Total Books :   {this.books.length} </td>
+                        <td colSpan="4">Total Books :   {this.books.length} </td>
                         </tr>
                     </thead>
+                    <tbody>
                     <tr>
                         <th>Book ID</th>
                         <th>Book Name</th>
@@ -31,7 +32,7 @@ class TechList extends Component {
                     {
                         this.books.map((book, index) => {
                             return (
-                                <tr>
+                                <tr key={index}>
                                     <td>{index + 1}</td>
                                     <td>{book.name}</td>
                                     <td>{book.price}</td>
@@ -40,6 +41,7 @@ class TechList extends Component {
                             )        
                         })
                     }
+                    </tbody>
                 </table>
             </div>
         )

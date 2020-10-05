@@ -57,3 +57,9 @@ Todo :
     1. Create new project
     2. Create header, footer, array1, array2, function component, class component
     
+
+Home work :
+https://www.firstenquiry.com/api/react/live/allproject.php
+https://www.firstenquiry.com/api/react/live/alljob.php
+https://www.firstenquiry.com/api/react/live/allservice.php
+https://www.firstenquiry.com/api/react/live/alluser.php
