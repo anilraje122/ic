@@ -1,0 +1,12 @@
+Life Cyle methods : 
+
+    1. Mounting :
+        Set of functions while rendering the page
+            1. constructor : Initialise the class variables and methods
+            2. getDerivedStateFromProps() : modify state & props
+            3. render() : render html element in browser
+            4. ComponentDidMount() : executes after render, gets data from server/assign variables etc.
+    2. Updating
+    3. Unmount : 
+        This invokes as soon as a component gets removed by its parent
+        

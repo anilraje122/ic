@@ -9,6 +9,10 @@ class Mounting extends Component{
         alert("From ComponentDidMount !");
     }
 
+    static getDerivedStateFromProps() {
+        alert("getDerivedStateFromProps");
+    }
+
     render(){
         alert("From Render");
         return <div className="container">
