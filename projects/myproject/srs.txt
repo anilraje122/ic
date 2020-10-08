@@ -1,0 +1,18 @@
+create a component 
+	->employee   as class component 
+	devide the page into 3 columns 
+	3
+	9
+	in 3 design a layout with 
+		empname 
+		empemail 
+		empmobile 
+		empprofile
+		empsalary 
+		empskill
+		
+	in 9 design a layout in table to display all fields of above 
+		Name	eMail	Mobile	Profile		Salary		skills
+
+
+    		

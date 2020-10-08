@@ -1,0 +1,63 @@
+
+	ui development 
+		
+		Layout desing 
+			->html
+			->css
+			->bootstrap 
+			->React Material (html + css + bootstrap + jquery)
+	-------starting poning--------	
+		ReactJs
+			->javascript 
+				->basic javascript
+				->advance javascript
+					->OOPS 
+					->ES-6
+					->Typescript
+				
+			React Syllabus 
+				 -:Reactjs project setup
+					-:XML
+					-:JSX - javascript and xml (html + javascript with xml rules)
+				   -:Component(Pages, block, function, regions, area)
+				   -:HTML + CSS + REACTJS jsx + Bootstrap
+				   -:React Events
+				   -:State Management  - input + output - class components
+						   ->redux(50%)
+				   -:Component intraction
+					   -:Props (TO communicate wetween 2 components)
+					   -:Props Validation
+				   -:localStorage (to main tain user login logout)
+				   -:sessionStorage
+				   
+				   -:Routing(Navigation)
+						nested routing
+				   -:Reactjs LifeCycle Methods
+				  
+				   -:Array Manipulation
+				   -:Data binding using state
+						->one way 
+						->two way 
+						->event based 2 way 
+				   -:Form Validation 
+				   -:CRUD Operation - API
+				   -:API (axios)
+						->communicate with local json file
+						->communicate with external json file
+						->Reactjs communication with server side language(php, java, python)
+				   -:Reactjs with Material
+						->searching 
+						->pagination
+						->sorting
+				   ->Hooks 
+				   ->Redux - 50%	   
+-------------Till here reactjs syllabus---------------
+				20-30 Hours Project ->Project development (using backend and reactjs)
+						->Weekend :  
+						->Saturday (3 hours)
+						->Sunday (3 hours)
+					->build generation
+					->deployment (how to make react project live)
+					->in Apache web server, git, Free server
+					->1 copy i upload in our server - U will get live URL - SHOW IN INTERVIEW
+------------------------------------------------------	
